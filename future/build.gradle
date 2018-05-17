@@ -1,0 +1,19 @@
+configurations {
+    compile.exclude group: 'ch.qos.logback'
+}
+
+dependencies {
+
+    compile("org.springframework.boot:spring-boot-starter-web") {
+        exclude module: 'org.springframework.boot:spring-boot-starter-logging'
+    }
+    compile('org.springframework.boot:spring-boot-starter-log4j')
+
+}
+
+test {
+    testLogging {
+        outputs.upToDateWhen { false }
+        showStandardStreams = true
+    }
+}

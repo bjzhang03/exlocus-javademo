@@ -1,0 +1,6 @@
+rootProject.name = 'simpledemo'
+include 'reflect'
+include 'reflect'
+include 'reflect'
+include 'annotation'
+
