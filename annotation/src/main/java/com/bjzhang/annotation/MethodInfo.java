@@ -9,8 +9,6 @@ import java.lang.annotation.*;
 @Inherited
 public @interface MethodInfo {
     String name() default "annotationTest";
-
     int id() default 0;
-
     Class<Long> gid();
 }
