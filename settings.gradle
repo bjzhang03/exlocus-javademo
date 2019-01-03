@@ -3,4 +3,5 @@ include 'reflect'
 include 'annotation'
 include 'simple'
 include 'future'
+include 'proxy'
 
