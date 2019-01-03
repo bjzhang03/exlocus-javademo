@@ -1,6 +1,6 @@
-rootProject.name = 'simpledemo'
-include 'reflect'
-include 'reflect'
+rootProject.name = 'javacode'
 include 'reflect'
 include 'annotation'
+include 'simple'
+include 'future'
 
