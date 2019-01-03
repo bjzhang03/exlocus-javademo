@@ -20,7 +20,7 @@ public class ParseAnnotation {
         for (Annotation annotation : annotations) {
             MethodInfo testA = (MethodInfo) annotation;
             System.out.println("id= \"" + testA.id() + "\"; name= \""
-                                       + testA.name() + "\"; gid = " + testA.gid());
+                    + testA.name() + "\"; gid = " + testA.gid());
         }
     }
 
@@ -42,8 +42,8 @@ public class ParseAnnotation {
                  */
                 MethodInfo annotation = method.getAnnotation(MethodInfo.class);
                 System.out.println("method = " + method.getName() + " ; id = "
-                                           + annotation.id() + " ; description = "
-                                           + annotation.name() + "; gid= " + annotation.gid());
+                        + annotation.id() + " ; description = "
+                        + annotation.name() + "; gid= " + annotation.gid());
             }
         }
     }
@@ -66,8 +66,8 @@ public class ParseAnnotation {
                  */
                 MethodInfo annotation = (MethodInfo) constructor.getAnnotation(MethodInfo.class);
                 System.out.println("constructor = "
-                                           + constructor.getName() + " ; id = " + annotation.id() + " ; description = "
-                                           + annotation.name() + "; gid= " + annotation.gid());
+                        + constructor.getName() + " ; id = " + annotation.id() + " ; description = "
+                        + annotation.name() + "; gid= " + annotation.gid());
             }
         }
     }

@@ -18,7 +18,6 @@ dependencies {
     compile('com.alibaba:fastjson:1.2.44')
     compile('com.fasterxml.jackson.dataformat:jackson-dataformat-yaml')
 
-
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
