@@ -1,7 +1,7 @@
 package com.bjzhang.reflect;
 
-        import java.lang.reflect.InvocationTargetException;
-        import java.lang.reflect.Method;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class Demo {
     public static void main(String[] args) {

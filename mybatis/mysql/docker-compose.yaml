@@ -1,0 +1,23 @@
+version: '2'
+
+networks:
+  mysql:
+
+services:
+  setup:
+    container_name: database
+    image: mysql:8.0.13
+    environment:
+      - MYSQL_DATABASE=test
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=user123456
+      - MYSQL_ROOT_PASSWORD=rootpw
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    #command: /bin/bash -c './scripts/generate.sh 2>&1 | tee /root/data/logs/generate.log'
+    working_dir: /root
+    ports:
+      - 3306:3306
+      - 33060:33060
+    networks:
+      - mysql
+
